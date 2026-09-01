@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: webapp-aula123
-  ACR_NAME: acraula123
+  AZURE_WEBAPP_NAME: lista-de-tarefas
+  ACR_NAME: lista-de-tarefas
   IMAGE_NAME: minha-app
   IMAGE_TAG: latest
-  ACR_LOGIN_SERVER: acraula123-bffcbtcrc7eef5fc.azurecr.io
+  ACR_LOGIN_SERVER: listatarefas.azurecr.io
 
 permissions:
   contents: read
