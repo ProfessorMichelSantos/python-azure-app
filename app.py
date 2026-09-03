@@ -27,7 +27,13 @@ class ProdutoPatchSchema(BaseModel):
     em_estoque: Optional[bool] = None
     ativo: Optional[bool] = None
 
+@app.get("/produtos/{produto_id}")
+def obter_produto(produto_id: int):
+    if produto_id not in produtos_db:
+        raise HTTPException(status_code=404, detail="Produto não encontrado.")
 
+    return produtos_db[produto_id]
+    
 @app.post("/produtos/", status_code=status.HTTP_201_CREATED)
 def criar_produto(produto: ProdutoSchema):
     # As validações do Field já garantem que preco > 0 e estoque >= 0
