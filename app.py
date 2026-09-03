@@ -95,4 +95,4 @@ def upsert_produto(produto_id: int, produto: ProdutoSchema, response: Response):
 
 # Inicializador do Uvicorn para rodar o arquivo diretamente
 if __name__ == "__main__":
-uvicorn.run("app:app", host="0.0.0.0", port=8000)
+    uvicorn.run("app:app", host="0.0.0.0", port=8000)
