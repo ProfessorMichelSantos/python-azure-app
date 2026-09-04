@@ -6,7 +6,7 @@ import uvicorn
 app = FastAPI(title="API de Produtos - Exercícios Práticos")
 
 produtos_db = {
-    1: {"nome": "Teclado2", "preco1": 100.0, "estoque": 10, "em_estoque": True, "ativo": True},
+    1: {"nome": "Teclado3", "preco1": 100.0, "estoque": 10, "em_estoque": True, "ativo": True},
     2: {"nome": "Mouse", "preco": 50.0, "estoque": 5, "em_estoque": False, "ativo": True}
 }
 
